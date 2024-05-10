@@ -1,0 +1,190 @@
+<!-- 
+    <footer>
+      <div class="footer-container">
+        <!-- firstdiv -->
+        <div class="fs1">
+          <div class="fdes">
+            <h4>About</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam
+            </p>
+            <div>
+              <span>Phone: 880 123 456 789</span>
+              <pspan> info@jstemplate.net </pspan>
+            </div>
+          </div>
+
+          <div class="flinks1">
+            <h4>Ouick link</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Lifestyle</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Technology</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Travel</a></li>
+              <li><a href="#">Business</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Sports</a></li>
+            </ul>
+          </div>
+
+          <div class="flinks2">
+            <h4>Category</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Lifestyle</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Technology</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Travel</a></li>
+            </ul>
+          </div>
+
+          <div class="fletter">
+            <div>
+              <h6>Weekly Newsletter</h6>
+              <p>Get blog articles and offers via email</p>
+            </div>
+            <form action="#" method="post">
+              <input type="email" name="email" placeholder="Your Email" />
+              <button>Subscribe</button>
+            </form>
+          </div>
+        </div>
+
+        <hr />
+        <!-- second div -->
+        <div class="fs2">
+          <div>
+            <img src="" alt="" />
+            <div>
+              <span>hshshshs</span>
+              <span>kdkdkdk</span>
+            </div>
+          </div>
+
+          <div>
+            <li>jdjdjdj</li>
+            <li>kdkdkdkd</li>
+            <li>lkdlkdkdk</li>
+          </div>
+        </div>
+      </div>
+    </footer> -->
+
+    footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* .footer-container {
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fs1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fdes {
+  align-items: start;
+  width: 100%;
+}
+.fdes h4 p div {
+  text-align: start;
+}
+
+.fs2 {
+  display: flex;
+}
+.flinks1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.flinks1 > ul {
+  display: flex;
+  flex-direction: column;
+}
+.flinks1 > ul > li {
+  text-align: start;
+}
+.flinks1 > h4 {
+  text-align: start;
+}
+
+.flinks2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.flinks2 > ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.fletter {
+  width: 100%;
+} */
+
+.footer-container {
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.fs1,
+.fs2 {
+  display: flex;
+}
+
+.fs1 > * {
+  flex: 1;
+}
+
+.fs2 > * {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.fs2 img {
+  max-width: 100%;
+}
+
+.fs2 > ul {
+  list-style: none;
+  padding: 0;
+}
+
+.fs2 > ul > li {
+  margin-bottom: 10px;
+}
+.flinks1 ul,
+.flinks2 ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  align-items: flex-start;
+  background-color: #4b6bfb;
+}
+
+.flinks1 ul li,
+.flinks2 ul li {
+  align-items: start;
+  width: 100%;
+}

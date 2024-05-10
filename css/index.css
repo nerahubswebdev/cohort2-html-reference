@@ -1,0 +1,262 @@
+body {
+  background-color: #e5e7eb;
+  scroll-behavior: smooth;
+}
+
+.header-container {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background-color: #e5e7eb;
+  padding: 10px 0px;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-container div {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+
+.second-section {
+  padding-top: 5px;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.banner-overall {
+  position: relative;
+  width: 100%;
+}
+
+.second-section .banner-overall img {
+  width: 100%;
+}
+
+.secondary-banner {
+  position: absolute;
+  left: 30px;
+  bottom: -50px;
+  background-color: white;
+  z-index: 50;
+  width: 400px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 20px;
+}
+
+.secondary-banner h4 {
+  background-color: #4b6bfb;
+  width: fit-content;
+  padding: 2px 10px;
+  color: white;
+  font-weight: 300;
+  font-size: small;
+  border-radius: 4px;
+}
+
+.secondary-banner p {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+#owner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: auto;
+}
+#owner img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 3px;
+}
+#owner span {
+  font-size: 13px;
+  padding: 5px;
+  color: #97989f;
+}
+
+.blog-section {
+  margin-top: 100px;
+}
+
+.blog-section h5 {
+  font-size: 40px;
+  background-color: blue;
+  color: white;
+}
+
+/* .container {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+} */
+/* nav {
+  float: right;
+} */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  display: inline;
+  margin-left: 20px;
+  list-style-type: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.blog-posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+.blog-post {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.container {
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  gap: 10px;
+}
+ul {
+  list-style: none;
+}
+
+.footer {
+  background-color: #24262b;
+  padding: 70px 0;
+}
+.footer-col {
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+/* .footer-col h4::before {
+  content: "";
+   position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+} */
+
+.footer-col p {
+  align-items: start;
+}
+.footer-col div p:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col div p a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col div p a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/*responsive*/
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 450px) {
+  .footer-col {
+    width: 100%;
+  }
+
+  .secondary-banner {
+    display: none;
+  }
+
+  .blog-section h5 {
+    font-size: 16px;
+  }
+
+  .header-container {
+    max-width: 100%;
+  }
+
+  .second-section {
+    max-width: 100%;
+  }
+  .container {
+    max-width: 100%;
+  }
+  .blog-posts {
+    gap: 5px;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+
+  .secondary-banner {
+    width: 200px;
+    padding: 4px;
+  }
+
+  .secondary-banner h4 {
+    font-size: 15px;
+    padding: 2px 3px;
+  }
+  .secondary-banner p {
+    font-size: 15px;
+  }
+}
+
+/* Media query for screens between 400px and 800px */
+@media screen and (min-width: 450px) and (max-width: 767px) {
+  /* Your styles for this range */
+}
